@@ -6,11 +6,13 @@
 (여기에 자기 소개)
 
 </br>
+
  ## :pushpin: Contact
 - 이메일: 1216thwjd@naver.com
 - 노션 : https://www.notion.so/db19676a3adf47ee95fcd535b2a976c0
 
 </br>
+
 ## :pushpin: Projects
 ### 1. [aldif]()
 >개발 기간: 2019.2.18 ~ 2019.4.5  
