@@ -1,0 +1,32 @@
+*{
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+padding: 0;
+}
+li{
+    list-style: none;
+}
+
+.fontw100{ font-weight: 100 !important;}
+.fontw200{ font-weight: 200 !important;}
+.fontw300{ font-weight: 300 !important;}
+.fontw400{ font-weight: 400 !important;}
+.fontw500{ font-weight: 500 !important;}
+.fontw600{ font-weight: 600 !important;}
+.fontw800{ font-weight: 800 !important;}
+
+.h100vh{ height: 100vh !important;}
+
+
+.activeColor{ color:red !important}
+.activeBg{ background-color:red !important}
+
+.dji{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link.active{
+    background-color: red;
+}
+
