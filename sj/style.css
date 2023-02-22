@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @font-face {
   font-family: "S-CoreDream-3Light";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
@@ -13,6 +14,11 @@
 
 li {
   list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 hr {
@@ -80,14 +86,8 @@ hr {
   background-color: #0FF2F5 !important;
 }
 
-.dji {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .nav-link.active {
-  background-color: #0FF2F5;
+  color: #0FF2F5;
 }
 
 .section {
@@ -123,11 +123,53 @@ hr {
 
 #work .siteBox {
   max-width: 60vw;
-  height: 500px;
-  background-color: #ddd;
-  border-radius: 20px;
+  height: 600px;
+  border-radius: 30px;
+  box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-#work span {
-  font-family: "Abril Fatface";
+#work h6 {
+  font-family: "Archivo Black";
   font-size: 30rem;
+}
+#work h1 {
+  font-size: 6rem;
+}
+#work .textBox {
+  max-width: 662px;
+}
+#work .afternumber::after {
+  content: "1";
+}
+#work .viewbutton a {
+  padding: 10px 38px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  margin-right: 30px;
+  font-size: 1.3rem;
+}
+#work .progressbar {
+  border-radius: 6px;
+  overflow: hidden;
+}
+#work .progressbar p {
+  height: 16px;
+  margin: 0;
+}
+#work li, #work p {
+  font-size: 1.3rem;
+}
+#work .afterbulleted li {
+  padding-right: 1rem;
+}
+#work .afterbulleted li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: -5px 10px 0 0;
+  vertical-align: middle;
+  background: white;
+  border-radius: 50%;
 }
