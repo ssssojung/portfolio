@@ -42,7 +42,7 @@
                 <img src="/sj/src/logo.svg" alt="소정이꺼">
                 </a>
             </h1>
-            <button id="mgnb" class="d-md-none">
+            <button id="mgnb" class="d-md-none ml-auto border-0 bg-transparent">
                 <i class="bi bi-list"></i> 
             </button>
             <ul id="gnb" class="nav d-none d-md-flex ml-md-auto">
@@ -54,34 +54,60 @@
         </div>
        
     </header>
-    <div  data-spy="scroll" data-target="#hd" data-offset="0">
-                <div id="bannerreact" class="section h100vh d-flex">
-                    <div class="swiper col-6">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">Slide 1</div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
-                        </div>
+    <div  data-spy="scroll" data-target="#hd" data-offset="0" class="container-fluid">
+                <div id="bannerreact" class="section  row">
+                    <div class="col-md-6 px-0">
+                        <div class="swiper ">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide reactbg0 d-flex flex-column justify-content-center">
+                                 <p class="">UX이해가 있는 협업을 위한 피그마작업 / 피그마링크 / 배경이미지 / </p>
+                              </div>
+                              <div class="swiper-slide  reactbg1 d-flex flex-column justify-content-center">
+                                <p class="">리액트 UX설계 및 프로토타입 / 신일이꺼 만들어서 구글드라이브에 pdf올릴것</p>
+                              </div>
+                              <div class="swiper-slide  reactbg2 d-flex flex-column justify-content-center">
+                                <p class="">깃버튼 과 소스링크</p>
+                              </div>
+                            </div>
+    
+                            <!-- <div class="swiper-pagination"></div>
+                           -->
+                            <!-- <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div> -->
+                          
+                            <!-- <div class="swiper-scrollbar"></div> -->
+                          </div>
 
-                        <div class="swiper-pagination"></div>
-                      
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      
-                        <div class="swiper-scrollbar"></div>
-                      </div>
+                    </div>
+                   
                     <!-- 리액트만 집중설명(반드시 스와이퍼로 할것) -->
-                    <ul class="col-6 d-block">
-                        <li>사용성을 고려한 UI디자인</li>
-                        <li>UX설계 및 프로토타입</li>
-                        <li>빠른 랜딩을 위한 재사용컴포넌트</li>
-                        <li>고민해보기</li>
-                    </ul>
+
+                    <div class="col-md-6 py-5 py-md-0 px-0 d-flex flex-column justify-content-center align-items-center">
+                        <div>
+
+                            <div class="font131620 ">
+                              
+                                트랜드분석 및 퍼소나를 위한 이벤트기획<br>
+                                사용성을 고려한 UI디자인<br>
+                             
+                                빠른 랜딩을 위한 컴포넌트설계</li>
+                              고민해보기
+                            </div>
+                            <div class="bannerBtns d-flex mt-4">
+                                <span class="border bg-dark text-white p-2 mx-2">UX전략도출 및 컨셉</span>
+                                <span class="border bg-dark text-white p-2 mx-2">화면설계 및 개발 팔로업</span>
+                                <span class="border bg-dark text-white p-2 mx-2">소스관리 / 바로가기</span>
+                             
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
 
                 </div>
-                <div id="about" class="section h100vh d-flex">
-                    <div class="col-7 pl-5 pr-0 position-relative" >
-                        <span class="">
+                <div id="about" class="section  d-flex py-5">
+                    <div class="col-7 pl-5 pr-0 position-relative my-5 py-5" >
+                        <span class="font131620 ">
                             안녕하세요. 신입 프론트 엔드 개발자 이소정입니다.</br>
                             이 포트폴리오에서는 프론트 엔드 개발자를 꿈꾸며 준비한,</br>
                             제 땀과 노력의 결과인 작업물들을 보실 수 있습니다.</br>
@@ -99,37 +125,39 @@
                     </div>
                     <div class="col-5 d-block position-relative">
                         <img class="position-absolute about_ani" src="/sj/src/about_btn.png" alt="">
-                            <div class="me"style="background-image: url('/sj/src/about_btn.png')"></div>
-                        <!-- <img src="/sj/src/sojeong.png" alt="내사진"> -->
+                            <!-- <div style="background-image: url('/sj/src/about_btn.png')"></div> -->
+                        <img class="me" src="/sj/src/sojeong.png" alt="내사진">
                     </div>
                     
                 </div>
+                <!-- work Section 시작 -->
                 <div id="work" class="section ">
                     <div class="swiper ">
                         <div class="swiper-wrapper ">
+                            <!-- 모레상점 -->
                             <div class="swiper-slide">
-                                <div class="row pt-5 h100vh" style="background-color: #DED3F6;" >
+                                <div class="row pt-5 h100vh" style="background-color: #F3F2F0;" >
                                     <div class="col-md-6 position-relative pl-5 pt-5 " >
                                         <div class="siteBox mt-5 ml-5" style="background-image: url(/sj/src/morestore.jpg);"></div>
                                     </div>
                                     <div class="col-md-5 offset-md-1 position-relative pl-5 pt-5">
                                         <div class="textBox pt-5">
                                             
-                                            <h1 class="afternumber position-relative">Eco Brand,</br>MORE STORE</h1>
-                                            <div class="viewbutton d-flex pt-5">
+                                            <h1 class="afternumber position-relative AccentC_1">Eco Brand,</br> <span>MORE STORE</span> </h1>
+                                            <div class="viewbutton d-flex pt-5 MainC_1">
                                                 <a href="">view site</a>
                                                 <a href="">view github</a>
                                                 <a href="">view pigma</a>
                                             </div>
-                                            <div class="pt-5">
-                                                <p>Languages</p>
+                                            <div class="pt-5 ">
+                                                <p class="AccentC_1">Languages</p>
                                                 <div class="d-flex progressbar mt-2">
                                                     <!-- 컬러는 class로 넣어줄것 -->
                                                     <p style="width: 38.3%; background-color: #C6AEA5;"></p>
                                                     <p style="width: 35.9%; background-color: #6E5657;"></p>
                                                     <p style="width: 25.8%; background-color: #D9D9D9;"></p>
                                                 </div>
-                                                <ul class="d-flex pt-2 afterbulleted">
+                                                <ul class="d-flex pt-4 afterbulleted AccentC_1">
                                                         <li>JavaScript 38.3%</li>
                                                         <li>HTML 35.9%</li>
                                                         <li>CSS 25.8%</li>
@@ -141,29 +169,75 @@
                                 </div>
                                 
                             </div>
-                            <div class="swiper-slide position-relative d-flex" style="background-color: #DED3F6;">
-                                <div class="siteBox col-md-6"></div>
-                                <div class="col-md-6 position-relative">
-                                    <h6>2</h6>
-                                    <div>
-
-                                        <h1>We Blend Life,</br>ALDIF</h1>
+                            <!-- 알디프 -->
+                            <div class="swiper-slide">
+                                <div class="row pt-5 h100vh" style="background-color: #F3F2F0;" >
+                                    <div class="col-md-6 position-relative pl-5 pt-5 " >
+                                        <div class="siteBox mt-5 ml-5" style="background-image: url(/sj/src/morestore.jpg);"></div>
                                     </div>
-
+                                    <div class="col-md-5 offset-md-1 position-relative pl-5 pt-5">
+                                        <div class="textBox pt-5">
+                                            
+                                            <h1 class="afternumber position-relative AccentC_1">Eco Brand,</br> <span>MORE STORE</span> </h1>
+                                            <div class="viewbutton d-flex pt-5 MainC_1">
+                                                <a href="">view site</a>
+                                                <a href="">view github</a>
+                                                <a href="">view pigma</a>
+                                            </div>
+                                            <div class="pt-5 ">
+                                                <p class="AccentC_1">Languages</p>
+                                                <div class="d-flex progressbar mt-2">
+                                                    <!-- 컬러는 class로 넣어줄것 -->
+                                                    <p style="width: 38.3%; background-color: #C6AEA5;"></p>
+                                                    <p style="width: 35.9%; background-color: #6E5657;"></p>
+                                                    <p style="width: 25.8%; background-color: #D9D9D9;"></p>
+                                                </div>
+                                                <ul class="d-flex pt-4 afterbulleted AccentC_1">
+                                                        <li>JavaScript 38.3%</li>
+                                                        <li>HTML 35.9%</li>
+                                                        <li>CSS 25.8%</li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-
+                                </div>
+                                
                             </div>
-                            <div class="swiper-slide position-relative d-flex" style="background-color: #ACD0EE;">
-                                <div class="siteBox col-md-6 position-relative"></div>
-                                <div class="col-md-6">
-                                    <h6>3</h6>
-                                    <div>
-                                        <h1>세번째 work~~</h1>
+                            <!-- 세번째 -->
+                            <div class="swiper-slide">
+                                <div class="row pt-5 h100vh" style="background-color: #F3F2F0;" >
+                                    <div class="col-md-6 position-relative pl-5 pt-5 " >
+                                        <div class="siteBox mt-5 ml-5" style="background-image: url(/sj/src/morestore.jpg);"></div>
                                     </div>
-
+                                    <div class="col-md-5 offset-md-1 position-relative pl-5 pt-5">
+                                        <div class="textBox pt-5">
+                                            
+                                            <h1 class="afternumber position-relative AccentC_1">Eco Brand,</br> <span>MORE STORE</span> </h1>
+                                            <div class="viewbutton d-flex pt-5 MainC_1">
+                                                <a href="">view site</a>
+                                                <a href="">view github</a>
+                                                <a href="">view pigma</a>
+                                            </div>
+                                            <div class="pt-5 ">
+                                                <p class="AccentC_1">Languages</p>
+                                                <div class="d-flex progressbar mt-2">
+                                                    <!-- 컬러는 class로 넣어줄것 -->
+                                                    <p style="width: 38.3%; background-color: #C6AEA5;"></p>
+                                                    <p style="width: 35.9%; background-color: #6E5657;"></p>
+                                                    <p style="width: 25.8%; background-color: #D9D9D9;"></p>
+                                                </div>
+                                                <ul class="d-flex pt-4 afterbulleted AccentC_1">
+                                                        <li>JavaScript 38.3%</li>
+                                                        <li>HTML 35.9%</li>
+                                                        <li>CSS 25.8%</li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-
-
+                                </div>
+                                
                             </div>
                         </div>
 

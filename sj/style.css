@@ -86,6 +86,27 @@ hr {
   background-color: #0FF2F5 !important;
 }
 
+.font1620 {
+  font-size: 20px !important;
+}
+
+.font131620 {
+  font-size: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .font1620 {
+    font-size: 16px !important;
+  }
+  .font131620 {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 420px) {
+  .font131620 {
+    font-size: 13px !important;
+  }
+}
 .nav-link.active {
   color: #0FF2F5;
 }
@@ -134,18 +155,31 @@ hr {
   font-size: 30rem;
 }
 #work h1 {
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 6.2rem;
+  letter-spacing: 0.08rem;
+}
+#work h1 span {
   font-size: 6rem;
 }
 #work .textBox {
-  max-width: 662px;
+  max-width: 720px;
 }
 #work .afternumber::after {
+  position: absolute;
+  right: 0;
+  top: 0;
   content: "1";
+  font-size: 25rem;
+  font-family: "Archivo Black";
+  color: white;
+  opacity: 80%;
 }
 #work .viewbutton a {
   padding: 10px 38px;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
+  border: 1px solid gray;
   margin-right: 30px;
   font-size: 1.3rem;
 }
@@ -170,6 +204,24 @@ hr {
   height: 10px;
   margin: -5px 10px 0 0;
   vertical-align: middle;
-  background: white;
+  background: gray;
   border-radius: 50%;
+}
+#work .MainC_1, #work .MainC_1 span, #work .MainC_1 a {
+  color: #CAACA2 !important;
+}
+#work .AccentC_1, #work .AccentC_1 span, #work .AccentC_1 a, #work .AccentC_1 li {
+  color: #6E5657 !important;
+}
+#work .MainC_2, #work .MainC_2 span, #work .MainC_2 a {
+  color: #7659B1 !important;
+}
+#work .AccentC_2, #work .AccentC_2 span, #work .AccentC_2 a {
+  color: #7A00FD !important;
+}
+#work .MainC_3, #work .MainC_3 span, #work .MainC_3 a {
+  color: #5F6F94 !important;
+}
+#work .AccentC_3, #work .AccentC_3 span, #work .AccentC_3 a {
+  color: #FFFFFF !important;
 }

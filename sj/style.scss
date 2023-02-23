@@ -48,6 +48,29 @@ hr{background:white;height:1px;border:0;}
 .activeColor{ color:#0FF2F5 !important}
 .activeBg{background-color:#0FF2F5 !important}
 
+.font1620{
+  font-size: 20px !important;
+}
+.font131620{
+  font-size: 20px !important;
+}
+
+@media (max-width:768px) {
+  .font1620{
+    font-size: 16px !important;
+  }
+  .font131620{
+    font-size: 16px !important;
+  }  
+  
+}
+@media (max-width:420px) {
+  .font131620{
+    font-size: 13px !important;
+  }
+  
+}
+
 // .dji{
 //     display: flex;
 //     justify-content: space-between;
@@ -107,19 +130,33 @@ hr{background:white;height:1px;border:0;}
   font-size: 30rem;
  }
  h1{
-  font-size: 6rem;
+  font-size: 7rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+    letter-spacing: 0.08rem;
+  span{font-size: 6rem; }
  }
  .textBox{
-  max-width: 662px;
+  max-width: 720px;
  }
  .afternumber::after{
+  position: absolute;
+  right: 0;
+  top: 0;
   content: "1";
+  font-size: 25rem;
+  font-family: 'Archivo Black';
+  color: white;
+
+  // content: counter(list_counter); 
+  // counter-increment: list_counter 1;
+  opacity: 80%;
  }
 
  .viewbutton a{
   padding: 10px 38px;
     background-color: rgba(0,0,0,0);
-    border: 1px solid #fff;
+    border: 1px solid gray;
     margin-right: 30px;
     font-size: 1.3rem;
 
@@ -146,10 +183,48 @@ hr{background:white;height:1px;border:0;}
   height:10px;
   margin:-5px 10px 0 0;
   vertical-align:middle;
-  background:white;
+  background:gray;
   border-radius:50%
  }
-//  .btn{
 
-//  }
+// 색상 클래스
+// 모레상점(1)
+.MainC_1,.MainC_1 span,.MainC_1 a{color:#CAACA2 !important;}
+// .SeconC_1{color:#D9D9D9 !important;}
+.AccentC_1,.AccentC_1 span,.AccentC_1 a,.AccentC_1 li{color:#6E5657 !important;}
+//알디프(2)
+.MainC_2,.MainC_2 span,.MainC_2 a{color:#7659B1 !important;}
+// .SeconC_2{color:#FAF5FD !important;}
+.AccentC_2,.AccentC_2 span,.AccentC_2 a{color:#7A00FD !important;}
+//아직안만들었..(3)
+.MainC_3,.MainC_3 span,.MainC_3 a{color:#5F6F94 !important;}
+// .SeconC_3{color:#98B3CB !important;}
+.AccentC_3,.AccentC_3 span,.AccentC_3 a{color:#FFFFFF !important;}
+}
+
+
+#bannerreact .swiper-slide{
+  height:750px;
+
+}
+.reactbg0{
+  background-color: black;
+}
+.reactbg1{
+  background-color: gray;
+}
+.reactbg2{
+  background-color: yellow;
+}
+
+.active{
+  background-color: red !important;
+  
+}
+
+@media (max-width:1080px) {
+  #bannerreact .swiper-slide{
+    height:100vw;  
+  }
+  
 }
