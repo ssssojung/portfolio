@@ -45,10 +45,10 @@ const bannerreact_swiper = new Swiper('#bannerreact .swiper', {
     }
     
   });
-  work_swiper.on('slideChange', function () {
-    if(this.activeIndex++) {
-      addclass
-    }
-  });
+  // work_swiper.on('slideChange', function () {
+  //   if(this.activeIndex++) {
+  //     addclass
+  //   }
+  // });
 
  
