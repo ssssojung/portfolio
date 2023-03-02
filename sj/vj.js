@@ -17,7 +17,7 @@ const bannerreact_swiper = new Swiper('#bannerreact .swiper', {
           case 2:text='소스관리 / 바로가기';break;
          
         }
-        return '<span class="border text-white p-2 mx-2 ' + className + '">' + text + '</span>';
+        return '<span class="border text-white p-2 m-2 ' + className + '">' + text + '</span>';
       },
     },
   
@@ -50,5 +50,3 @@ const bannerreact_swiper = new Swiper('#bannerreact .swiper', {
   //     addclass
   //   }
   // });
-
- 
