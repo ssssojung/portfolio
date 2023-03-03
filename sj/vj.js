@@ -1,6 +1,13 @@
+
+ AOS.init();
+
 const bannerreact_swiper = new Swiper('#bannerreact .swiper', {
     // Optional parameters
     // direction: 'vertical',
+    effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
     loop: true,
   
     // If we need pagination

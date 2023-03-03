@@ -183,6 +183,12 @@ hr {
 #about .me {
   max-width: 474px;
 }
+#about .me2 {
+  max-width: 505px;
+}
+#about .me:hover.me2 {
+  display: block;
+}
 #about .me_left {
   position: absolute;
   left: 0;
@@ -236,14 +242,15 @@ hr {
   color: red;
 }
 #about .box {
-  -ms-overflow-style: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 #about .box::-webkit-scrollbar {
   display: none;
 }
 #about .timeline-item {
   margin-left: 4rem;
-  padding: 2em 2em 1.5em;
+  padding: 2em 2em 1.3em;
   position: relative;
   color: rgba(0, 0, 0, 0.7);
   border-left: 2px solid rgba(0, 0, 0, 0.3);
@@ -256,7 +263,7 @@ hr {
   top: -0.1em;
   display: block;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #7393a7;
 }
 #about .timeline-item::after {
@@ -277,12 +284,14 @@ hr {
 }
 #about .timeline-item p {
   margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 1rem;
 }
 
 #work .siteBox {
   height: 750px;
-  border-radius: 30px;
-  box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  box-shadow: 15px 15px 17px rgba(0, 0, 0, 0.25);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -302,6 +311,9 @@ hr {
 #work .textBox {
   max-width: 720px;
 }
+#work .progressbar_work {
+  height: 30px;
+}
 #work .afternumber::before {
   position: absolute;
   right: 0;
@@ -313,11 +325,13 @@ hr {
   opacity: 80%;
 }
 #work .viewbutton a {
-  padding: 10px 38px;
+  padding: 10px 59px;
   border: 1px solid #7659B1;
   margin-right: 30px;
   font-size: 1.3rem;
   transition: all 0.7s;
+  letter-spacing: -0.083em;
+  white-space: all no-wrap;
 }
 #work .viewbutton a:hover {
   background-color: #7659B1;
@@ -327,7 +341,7 @@ hr {
   font-size: 1.3rem;
 }
 #work .afterbulleted li {
-  padding-right: 1rem;
+  padding-right: 30px;
 }
 #work .afterbulleted li::before {
   content: "";
@@ -350,7 +364,7 @@ hr {
   color: #7659B1 !important;
 }
 #work .AccentC_2 {
-  color: #7A00FD !important;
+  color: #6612bf !important;
 }
 #work .MainC_3 {
   color: #5F6F94 !important;
@@ -364,48 +378,77 @@ hr {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 50px;
 }
 #skill label {
   padding-right: 20px;
-  font-size: 2rem;
-  width: 193px;
+  font-size: 1.3rem;
+  width: 10rem;
 }
 #skill span {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-left: 20px;
 }
-#skill progress {
+#skill .skillList > div {
   width: 80%;
-  height: 20px;
   border-radius: 0;
 }
-#skill progress::-webkit-progress-bar {
-  background-color: white;
+#skill .anibar {
+  display: block;
+  min-height: 14px;
 }
-#skill .skill0 {
-  padding-top: 50px;
+#skill .aos-animate .skill0 .anibar {
+  width: 90%;
 }
-#skill .skill0 progress::-webkit-progress-value {
-  background-color: #F09393;
+#skill .aos-animate .skill1 .anibar {
+  width: 80%;
 }
-#skill .skill1 progress::-webkit-progress-value {
-  background-color: #E5AD98;
+#skill .aos-animate .skill2 .anibar {
+  width: 60%;
 }
-#skill .skill2 progress::-webkit-progress-value {
-  background-color: #FEDF86;
+#skill .aos-animate .skill3 .anibar {
+  width: 50%;
 }
-#skill .skill3 progress::-webkit-progress-value {
-  background-color: #BDD688;
+#skill .aos-animate .skill4 .anibar {
+  width: 90%;
 }
-#skill .skill4 progress::-webkit-progress-value {
-  background-color: #B6A3D6;
+#skill .aos-animate .skill5 .anibar {
+  width: 90%;
 }
-#skill .skill5 progress::-webkit-progress-value {
-  background-color: #E7BAD1;
+#skill .skill0 .anibar {
+  width: 0;
+  background-color: #F09393 !important;
+  transition: width 1s;
+  transition-delay: 0.5s;
 }
-#skill progress::-moz-progress-bar {
-  background-color: red;
+#skill .skill1 .anibar {
+  width: 0;
+  background-color: #E5AD98 !important;
+  transition: width 1s;
+  transition-delay: 0.5s;
+}
+#skill .skill2 .anibar {
+  width: 0;
+  background-color: #FEDF86 !important;
+  transition: width 1s;
+  transition-delay: 0.5s;
+}
+#skill .skill3 .anibar {
+  width: 0;
+  background-color: #BDD688 !important;
+  transition: width 1s;
+  transition-delay: 0.5s;
+}
+#skill .skill4 .anibar {
+  width: 0;
+  background-color: #B6A3D6 !important;
+  transition: width 1s;
+  transition-delay: 0.5s;
+}
+#skill .skill5 .anibar {
+  width: 0;
+  background-color: #E7BAD1 !important;
+  transition: width 1s;
+  transition-delay: 0.5s;
 }
 
 #bannerreact {
@@ -426,7 +469,7 @@ hr {
 }
 
 .bannerBtns > .active {
-  background-color: #B1CCCC !important;
+  background-color: #B9D3EB !important;
   color: #FCF8EC !important;
   border: 1px solid white !important;
 }
@@ -549,4 +592,8 @@ footer .quick-menu ul li .quick-kakao:hover::after {
 
 footer .quick-menu ul li .quick-github {
   background: white url(../sj/src/github.svg) no-repeat center center;
+}
+
+#footer span {
+  font-size: 0.9rem;
 }

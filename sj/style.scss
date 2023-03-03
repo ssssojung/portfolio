@@ -136,6 +136,9 @@ hr{background:white;height:1px;border:0;}
     .me{
       max-width:474px;
     }
+    // .me:hover{display: none;}
+    .me2{max-width: 505px;}
+    .me:hover.me2{display: block;}
     .me_left{
       position: absolute;
       left: 0; top: 0;
@@ -163,7 +166,6 @@ hr{background:white;height:1px;border:0;}
       // animation-play-state: paused;
       // }
     }
-    
 
     @keyframes rotate_image{
         100% {
@@ -193,7 +195,8 @@ hr{background:white;height:1px;border:0;}
       }
       
       .box{
-        -ms-overflow-style: none;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
       }
       .box::-webkit-scrollbar{
         display:none;
@@ -201,7 +204,7 @@ hr{background:white;height:1px;border:0;}
       
       .timeline-item {
         margin-left: 4rem;
-        padding: 2em 2em 1.5em;
+        padding: 2em 2em 1.3em;
         position: relative;
         color: rgba(0,0,0,.7);
         border-left: 2px solid rgba(0,0,0,.3);
@@ -215,7 +218,7 @@ hr{background:white;height:1px;border:0;}
         top: -0.1em;
         display: block;
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #7393a7;
       }
       .timeline-item::after {
@@ -237,15 +240,17 @@ hr{background:white;height:1px;border:0;}
       
       .timeline-item p {
         margin-bottom: 0;
+        margin-top: 10px;
+        font-size: 1rem;
       }
-}
+    }
 
 #work{
  .siteBox{
   // max-width: 60vw;
   height:750px;
-  border-radius: 30px;
-  box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  box-shadow: 15px 15px 17px rgba(0, 0, 0, 0.25);
   background-size: cover;
   background-repeat: no-repeat;
  }
@@ -264,6 +269,9 @@ hr{background:white;height:1px;border:0;}
  .textBox{
   max-width: 720px;
  }
+ .progressbar_work{
+  height: 30px;
+ }
  .afternumber::before{
   position: absolute;
   right: 0;
@@ -276,13 +284,16 @@ hr{background:white;height:1px;border:0;}
  }
 
  .viewbutton a{
-   padding: 10px 38px;
+   padding: 10px 59px;
     // background-color: rgba(0,0,0,0);
     border: 1px solid #7659B1;
     margin-right: 30px;
     font-size: 1.3rem;
     transition: all .7s;
+    letter-spacing: -0.083em;
+    white-space: all no-wrap;
  }
+ 
  .viewbutton a:hover{   
     background-color: #7659B1;
     color: #FAF5FD !important;
@@ -294,7 +305,7 @@ hr{background:white;height:1px;border:0;}
   font-size: 1.3rem;
  }
  .afterbulleted li{
-  padding-right: 1rem;
+  padding-right: 30px;
  }
  .afterbulleted li::before{
   content:'';
@@ -316,47 +327,55 @@ hr{background:white;height:1px;border:0;}
 .MainC_2, 
 .MainC_2 span,a{color:#7659B1 !important;}
 // .SeconC_2{color:#FAF5FD !important;}
-.AccentC_2{color:#7A00FD !important;}
+.AccentC_2{color:#6612bf !important;}
 //아직안만들었..(3)
 .MainC_3{color:#5F6F94 !important;}
 // .SeconC_3{color:#98B3CB !important;}
 .AccentC_3{color:#FFFFFF !important;}
 }
 #skill{
+  .god{
+    // max-width: 200px;
+  }
   .skillList{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;///
   }
   label {
     padding-right: 20px;
-    font-size: 2rem;
-    width: 193px;
+    font-size: 1.3rem;
+    width: 10rem;
   }
   span{
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin-left: 20px;
   }
-  progress {
+  .skillList>div{
     width: 80%;
-    height: 20px;
     border-radius: 0;
   }
-  progress::-webkit-progress-bar{
-    background-color: white;
+  // div::-webkit-div-bar{
+  //   background-color: white;
+  // }::v alue
+  .anibar{ display: block; min-height:14px}
+  .aos-animate{
+    .skill0 .anibar{width: 90%;}
+    .skill1 .anibar{width: 80%;}
+    .skill2 .anibar{width: 60%;}
+    .skill3 .anibar{width: 50%;}
+    .skill4 .anibar{width: 90%;}
+    .skill5 .anibar{width: 90%;}
   }
-  .skill0{ padding-top: 50px; progress::-webkit-progress-value{background-color: #F09393;}}
-  .skill1{ progress::-webkit-progress-value{background-color: #E5AD98;}}
-  .skill2{ progress::-webkit-progress-value{background-color: #FEDF86;}}
-  .skill3{ progress::-webkit-progress-value{background-color: #BDD688;}}
-  .skill4{ progress::-webkit-progress-value{background-color: #B6A3D6;}}
-  .skill5{ progress::-webkit-progress-value{background-color: #E7BAD1;}}
+  .skill0 .anibar{width: 0;background-color: #F09393 !important; transition: width 1s; transition-delay: 0.5s;}
+  .skill1 .anibar{width: 0;background-color: #E5AD98 !important; transition: width 1s; transition-delay: 0.5s;}
+  .skill2 .anibar{width: 0;background-color: #FEDF86 !important; transition: width 1s; transition-delay: 0.5s;}
+  .skill3 .anibar{width: 0;background-color: #BDD688 !important; transition: width 1s; transition-delay: 0.5s;}
+  .skill4 .anibar{width: 0;background-color: #B6A3D6 !important; transition: width 1s; transition-delay: 0.5s;}
+  .skill5 .anibar{width: 0;background-color: #E7BAD1 !important; transition: width 1s; transition-delay: 0.5s;}
   
-  progress::-moz-progress-bar{
-    background-color: red;
-  }
 }
 
 
@@ -374,7 +393,7 @@ hr{background:white;height:1px;border:0;}
   color: #7F786F !important;
 }
 .bannerBtns>.active{
-  background-color: #B1CCCC !important;
+  background-color: #B9D3EB !important;
   color: #FCF8EC !important;
   border: 1px solid white !important;
 
@@ -444,8 +463,6 @@ hr{background:white;height:1px;border:0;}
   80%{ background-position: 0  top ;}  
   100%{ background-position: 0  top ;}
 }
-
-
 //퀵메뉴
 footer .quick-menu {position:fixed;right:24px;/*bottom:448px;*/;bottom:50px;z-index:4}
 footer .quick-menu ul li {display:block;text-align: right;}
@@ -456,4 +473,9 @@ footer .quick-menu ul li .quick-top {background:#222 url(../sj/src/ico_footer_to
 footer .quick-menu ul li .quick-kakao:hover {width:177px;border-radius: 30px;background-position:top 15px left 17px;transition: all .15s;}
 footer .quick-menu ul li .quick-kakao:hover::after {content:'카카오 오픈채팅';font-size:14px;color:#222;position:absolute;right:17px;top:17px;;display:inline-block;width:107px;text-indent:1px;}
 footer .quick-menu ul li .quick-github{background:white url(../sj/src/github.svg) no-repeat center center;}
+//footer
+#footer{
+  // hr{max-width: 90%;}
+  span{font-size: 0.9rem;}
 
+}
