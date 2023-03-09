@@ -5,7 +5,7 @@ const bannerreact_swiper = new Swiper('#bannerreact .swiper', {
     // Optional parameters
     // direction: 'vertical',
     effect: 'fade',
-  fadeEffect: {
+    fadeEffect: {
     crossFade: true
   },
     loop: true,
@@ -19,9 +19,11 @@ const bannerreact_swiper = new Swiper('#bannerreact .swiper', {
 
       renderBullet: function (index, className) {
         switch(index){
-          case 0:text='UX전략도출 및 컨셉';break;
-          case 1:text='화면설계 및 개발 팔로업';break;
-          case 2:text='소스관리 / 바로가기';break;
+          case 0:text='소스관리 / 바로가기';break;
+          case 1:text='UX전략도출 및 컨셉';break;
+          case 2:text='화면설계 및 개발 팔로업';break;
+          
+          
          
         }
         return '<span class="border text-white p-2 m-2 ' + className + '">' + text + '</span>';
@@ -42,14 +44,20 @@ const bannerreact_swiper = new Swiper('#bannerreact .swiper', {
 
 
   const work_swiper = new Swiper("#work .swiper", {
+    loop: true,
+
     pagination: {
       el: "#work .swiper-pagination",
       type: "fraction",
     },
-    navigation: {
-      nextEl: "#work .swiper-button-next",
-      prevEl: "#work .swiper-button-prev",
-    }
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    // navigation: {
+    //   nextEl: "#work .swiper-button-next",
+    //   prevEl: "#work .swiper-button-prev",
+    // }
     
   });
   // work_swiper.on('slideChange', function () {

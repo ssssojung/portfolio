@@ -45,7 +45,7 @@
               <div class="swiper-slide reactbg0 d-flex align-items-strech">
                  <!-- <p class="">UX이해가 있는 협업을 위한 피그마작업 / 피그마링크 / 배경이미지 / </p> -->
                  <img src="sj/src/img/sitemap.svg" class="m-5 d-none d-md-flex">
-                 <div class="keyani reactui col-8 m-5">
+                 <div class="keyani reactui col-md-8 m-5">
                     <!-- <img src="/img/react_ui.png"> -->
                  </div>
               </div>
@@ -53,7 +53,7 @@
                 <!-- <p class="">리액트 UX설계 및 프로토타입 / 신일이꺼 만들어서 구글드라이브에 pdf올릴것</p> -->
               </div>
               <div class="swiper-slide  reactbg2 d-flex flex-column justify-content-center">
-                <!-- <p class="">깃버튼 과 소스링크</p> -->
+                <img src="sj/src/prototype.svg" class="p-5">
               </div>
             </div>
 
@@ -143,10 +143,14 @@
 
                 $('body, html').animate({scrollTop : $(targetcontent).offset().top }, 400)
                 //제이쿼리 2버전에서 먹히는 것임 주의할것
-              
+                $('#mgnb').removeClass('open')
                 })
                   
-                // 모바일 메뉴
+                //모바일 메뉴
+                // $('#mgnb').click(function(){
+                //   $(this).toggleClass('open');     
+                // })
+
                 $('#mgnb').on('click',function(e){
                    $(this).toggleClass('open')
                 })

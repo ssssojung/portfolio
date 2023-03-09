@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css);
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/maximum-impact");
 @font-face {
   font-family: "S-CoreDream-3Light";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
@@ -288,8 +290,21 @@ hr {
   font-size: 1rem;
 }
 
+#work {
+  font-family: "Nanum Gothic";
+}
+#work .swiper-slide.row {
+  margin: 0 !important;
+}
 #work .siteBox {
-  height: 750px;
+  height: 52vh;
+  border-radius: 20px;
+  box-shadow: 15px 15px 17px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#work .siteBox_m {
+  height: 27vh;
   border-radius: 20px;
   box-shadow: 15px 15px 17px rgba(0, 0, 0, 0.25);
   background-size: cover;
@@ -306,10 +321,14 @@ hr {
   letter-spacing: 0.08rem;
 }
 #work h1 span {
-  font-size: 6rem;
+  font-size: 3rem;
+}
+#work h1 span b {
+  font-size: 7rem;
 }
 #work .textBox {
   max-width: 720px;
+  font-family: "Nanum Gothic";
 }
 #work .progressbar_work {
   height: 30px;
@@ -318,19 +337,20 @@ hr {
   position: absolute;
   right: 0;
   top: 0;
+  margin-right: -61px;
   content: attr(num-is);
   font-size: 25rem;
-  font-family: "Archivo Black";
-  color: white;
-  opacity: 80%;
+  font-family: "Maximum Impact";
+  -webkit-text-stroke: 10px #FAF5FD;
+  opacity: 60%;
+  color: transparent !important;
 }
 #work .viewbutton a {
-  padding: 10px 59px;
+  padding: 10px 58px;
   border: 1px solid #7659B1;
-  margin-right: 30px;
   font-size: 1.3rem;
   transition: all 0.7s;
-  letter-spacing: -0.083em;
+  letter-spacing: 0.3em;
   white-space: all no-wrap;
 }
 #work .viewbutton a:hover {
@@ -341,7 +361,7 @@ hr {
   font-size: 1.3rem;
 }
 #work .afterbulleted li {
-  padding-right: 30px;
+  padding-right: 1.5vw;
 }
 #work .afterbulleted li::before {
   content: "";
@@ -360,7 +380,7 @@ hr {
   color: #6E5657 !important;
 }
 #work .MainC_2,
-#work .MainC_2 span, #work a {
+#work .MainC_2 span, #work a, #work b {
   color: #7659B1 !important;
 }
 #work .AccentC_2 {
@@ -374,7 +394,6 @@ hr {
 }
 
 #skill .skillList {
-  display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
@@ -395,18 +414,19 @@ hr {
 #skill .anibar {
   display: block;
   min-height: 14px;
+  margin-top: 1rem;
 }
 #skill .aos-animate .skill0 .anibar {
   width: 90%;
 }
 #skill .aos-animate .skill1 .anibar {
-  width: 80%;
+  width: 70%;
 }
 #skill .aos-animate .skill2 .anibar {
   width: 60%;
 }
 #skill .aos-animate .skill3 .anibar {
-  width: 50%;
+  width: 70%;
 }
 #skill .aos-animate .skill4 .anibar {
   width: 90%;
